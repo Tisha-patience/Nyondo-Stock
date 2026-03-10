@@ -13,9 +13,30 @@
       background-color: aliceblue;
     }
     .container {
-      background-color: aqua;
+      /* background-color:darksalmon; */
       height: 100vh;
       display: flex;
+      width: 100%;
+    }
+    .sidebar {
+      flex: 1;
+      /* height: 50vh; */
+      /* border-right-width: 1px;
+      border-right-color: black;
+      border-right-style: solid; */
+      border-right: 1px solid black;
+    }
+    .content {
+      flex: 4;
+    }
+    .input-container {
+      display: flex;
+      background-color:darkblue;
+      flex: 1;
+    }
+    .input-section{
+      display: flex;
+      flex-direction: column;
     }
   </style>
   <body>
@@ -34,16 +55,33 @@
           <a href="../stockManagement.html">Stock Management</a>
         </div>
         <div>
-          <a href="../transportManagement.html">Transport Management</a>
+          <a href="../transportManagement.html">Transport Charges</a>
         </div>
       </div>
       <div class="content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          accusamus eligendi veniam tempora, recusandae quos tenetur enim
-          placeat, vero corporis consequatur temporibus soluta ullam? Nesciunt
-          harum officia aliquam modi tenetur.
-        </p>
+        <form class="action">
+          <!-- Section 1 -->
+          <section>
+            <h1>Sales Registration</h1>
+            <div class="input-container">
+              <div  class="input-section">
+                <label for="salesdate">Sales Date</label>
+                <input type="date" />
+              </div>
+              <br />
+              <div class="input-section">
+                <label for="salesperson">Sales Person</label>
+                <select name="" id="salesperson">
+                  <option value="" disabled selected>
+                    Select a Representative
+                  </option>
+                  <option value="1">Mary Jane</option>
+                  <option value="2">John Doe</option>
+                </select>
+              </div>
+            </div>
+          </section>
+        </form>
       </div>
     </div>
   </body>

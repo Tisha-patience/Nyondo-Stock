@@ -6,56 +6,23 @@
     <title>Sales Registration</title>
     <link rel="stylesheet" href="../css/sales-reg.css" />
   </head>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: aliceblue;
-    }
-    .container {
-      /* background-color:darksalmon; */
-      height: 100vh;
-      display: flex;
-      width: 100%;
-    }
-    .sidebar {
-      flex: 1;
-      /* height: 50vh; */
-      /* border-right-width: 1px;
-      border-right-color: black;
-      border-right-style: solid; */
-      border-right: 1px solid black;
-    }
-    .content {
-      flex: 4;
-    }
-    .input-container {
-      display: flex;
-      background-color:darkblue;
-      flex: 1;
-    }
-    .input-section{
-      display: flex;
-      flex-direction: column;
-    }
-  </style>
   <body>
     <div class="container">
       <div class="sidebar">
         <div>
           <a href="../dashboard.html">Dashboard</a>
-        </div>
+        </div><br>
         <div>
           <a href="../sales/salesManagement.html">Sales Management</a>
-        </div>
+        </div><br>
         <div>
           <a href="../supplierRegistration.html">Supplier Management</a>
+        </div><br>
+        <div>
+          <!-- <a href="../stockManagement.html">Stock Management</a> -->
         </div>
         <div>
-          <a href="../stockManagement.html">Stock Management</a>
-        </div>
-        <div>
-          <a href="../transportManagement.html">Transport Charges</a>
+          <!-- <a href="../transportManagement.html">Transport Charges</a> -->
         </div>
       </div>
       <div class="content">
@@ -64,7 +31,7 @@
           <section>
             <h1>Sales Registration</h1>
             <div class="input-container">
-              <div  class="input-section">
+              <div class="input-section">
                 <label for="salesdate">Sales Date</label>
                 <input type="date" />
               </div>
@@ -81,6 +48,122 @@
               </div>
             </div>
           </section>
+
+          <section>
+            <h2>Customer Details</h2>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter full name"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="input-section">
+                <label for="number">Phone Number</label>
+                <input type="number" placeholder="Enter full number" />
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <section>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="email>">Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="input-section">
+                <label for="customer">Customer Type</label>
+                <select name="customer" id="customer">
+                  <option value="" disabled selected>
+                    Select customer type
+                  </option>
+                  <option value="1">Cash customer</option>
+                  <option value="2">Credit customer</option>
+                  <option value="3">Deposit customer</option>
+                  <option value="4">Registered customer</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Items</h2>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="pdtId">Pdt ID:</label>
+                <input type="text" id="pdtId" name="pdtId" required />
+              </div>
+              <div class="input-section">
+                <label for="quantity">Quantity:</label>
+                <input
+                  type="number"
+                  id="quantity"
+                  name="quantity"
+                  min="1"
+                  required
+                />
+              </div>
+              <div class="input-section">
+                <label for="unitPrice">Unit Price:</label>
+                <input
+                  type="number"
+                  id="unitPrice"
+                  name="unitPrice"
+                  min="0"
+                  required
+                />
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <section>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="pdtId">Pdt ID:</label>
+                <input type="text" id="pdtId" name="pdtId" required />
+              </div>
+
+              <div class="input-section">
+                <label for="quantity">Quantity:</label>
+                <input
+                  type="number"
+                  id="quantity"
+                  name="quantity"
+                  min="1"
+                  required
+                />
+              </div>
+
+              <div class="input-section">
+                <label for="unitPrice">Unit Price:</label>
+                <input
+                  type="number"
+                  id="unitPrice"
+                  name="unitPrice"
+                  min="0"
+                  required
+                />
+              </div>
+            </div>
+          </section>
+
+          
+            <div class="form-buttons">
+    <button type="button" class="cancel">Cancel</button>
+    <button type="submit" class="submit">Submit</button>
+  </div>
+
+          
         </form>
       </div>
     </div>

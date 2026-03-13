@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stock Registration</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/stock-reg.css" />
+  </head>
+  <body class="shiny-background">
+    <div class="container">
+      <div class="card shadow mt-3 mb-3">
+        <div class="card-body">
+          <h1 class="card-title text-center">Register New Stock</h1>
+          <hr />
+          <form>
+            <!-- Items -->
+            <div class="col mb-3">
+              <label for="item-Name" class="form-label">Item Name</label>
+              <input
+                style="
+                  background-color: #fdfdfd;
+                  border: 2px solid #a67c8a;
+                  color: #333;
+                  border-radius: 6px;
+                  box-shadow: 0 0 6px rgba(166, 124, 138, 0.4);
+                "
+                type="text"
+                class="form-control burgundy-form"
+                placeholder="Enter item name"
+                aria-label="First name"
+              />
+            </div>
+
+            <!-- Category -->
+            <div class="col">
+              <label for="category" class="form-label">Category</label>
+              <select
+                style="
+                  background-color: #fdfdfd;
+                  border: 2px solid #a67c8a;
+                  color: #333;
+                  border-radius: 6px;
+                  box-shadow: 0 0 6px rgba(166, 124, 138, 0.4);
+                "
+                class="form-select"
+                id="category"
+                required
+                aria-label="Default select example"
+              >
+                <option selected disabled>Choose category</option>
+                <option value="tools">Tools</option>
+                <option value="fasteners">
+                  Fasteners (Nails, Screws, Bolts)
+                </option>
+                <option value="electrical">Electrical Supplies</option>
+                <option value="plumbing">Plumbing Materials</option>
+                <option value="paint">Paint & Finishes</option>
+                <option value="safety">Safety Equipment</option>
+                <option value="building">Building Materials</option>
+              </select>
+            </div>
+
+            <!-- Quantity -->
+            <div class="col mt-3">
+              <label for="quantity" class="form-label">Quantity</label>
+              <input
+                style="
+                  background-color: #fdfdfd;
+                  border: 2px solid #a67c8a;
+                  color: #333;
+                  border-radius: 6px;
+                  box-shadow: 0 0 6px rgba(166, 124, 138, 0.4);
+                "
+                type="number"
+                class="form-control"
+                id="quantity"
+                placeholder="Enter quantity"
+              />
+            </div>
+            <hr />
+
+            <!-- Supplier -->
+            <div class="col mt-3">
+              <label for="supplier" class="form-label">Supplier</label>
+              <input
+               style="
+                  background-color: #fdfdfd;
+                  border: 2px solid #a67c8a;
+                  color: #333;
+                  border-radius: 6px;
+                  box-shadow: 0 0 6px rgba(166, 124, 138, 0.4);
+                "
+                type="text"
+                class="form-control"
+                id="supplier"
+                placeholder="Enter supplier name"
+              />
+            </div>
+            <!-- Supplier Contact it can be email or phone number-->
+            <div class="col mt-3">
+              <label for="supplierContact" class="form-label"
+                >Supplier Contact</label
+              >
+              <input
+               style="
+                  background-color: #fdfdfd;
+                  border: 2px solid #a67c8a;
+                  color: #333;
+                  border-radius: 6px;
+                  box-shadow: 0 0 6px rgba(166, 124, 138, 0.4);
+                "
+                type="text"
+                class="form-control"
+                id="supplierContact"
+                placeholder="Enter supplier contact"
+                required
+              />
+            </div>
+            <hr />
+
+            <!-- Purchase Price -->
+            <div class="row">
+              <div class="col mt-3">
+                <h4>Pricing Information</h4>
+                <label for="purchasePrice" class="form-label"
+                  >Purchase Price (per unit)</label
+                >
+                <input
+                 style="
+                  background-color: #fdfdfd;
+                  border: 2px solid #a67c8a;
+                  color: #333;
+                  border-radius: 6px;
+                  box-shadow: 0 0 6px rgba(166, 124, 138, 0.4);
+                "
+                  type="number"
+                  class="form-control"
+                  id="purchasePrice"
+                  placeholder="Enter purchase price"
+                />
+              </div>
+
+              <!-- Sale Price -->
+              <div class="col">
+                <label
+                  for="salePrice"
+                  class="form-label"
+                  style="margin-top: 52px"
+                  >Sales Price (per unit)</label
+                >
+                <input
+                style="
+                  background-color: #fdfdfd;
+                  border: 2px solid #a67c8a;
+                  color: #333;
+                  border-radius: 6px;
+                  box-shadow: 0 0 6px rgba(166, 124, 138, 0.4);
+                "
+                  type="number"
+                  class="form-control"
+                  id="salePrice"
+                  placeholder="Enter sale price"
+                />
+              </div>
+            </div>
+
+            <!-- Discount / Markup -->
+            <div class="col mt-3">
+              <label for="discount" class="form-label"
+                >Discount / Markup (%)</label
+              >
+              <input
+                style="
+                  background-color: #fdfdfd;
+                  border: 2px solid #a67c8a;
+                  color: #333;
+                  border-radius: 6px;
+                  box-shadow: 0 0 6px rgba(166, 124, 138, 0.4);
+                "
+                type="number"
+                class="form-control"
+                id="discount"
+                placeholder="Enter discount or markup %"
+                min="0"
+                step="0.01"
+              />
+            </div>
+
+            <!-- Date of Entry -->
+            <div class="row">
+              <div class="col mt-3">
+                <label for="dateEntry" class="form-label">Date of Entry</label>
+                <input
+                 style="
+                  background-color: #fdfdfd;
+                  border: 2px solid #a67c8a;
+                  color: #333;
+                  border-radius: 6px;
+                  box-shadow: 0 0 6px rgba(166, 124, 138, 0.4);
+                "
+                  type="date"
+                  class="form-control"
+                  id="dateEntry"
+                  required
+                />
+              </div>
+
+              <!-- Reorder Level -->
+              <div class="col mt-3">
+                <label for="reorderLevel" class="form-label"
+                  >Reorder Level</label
+                >
+                <input
+                  style="
+                  background-color: #fdfdfd;
+                  border: 2px solid #a67c8a;
+                  color: #333;
+                  border-radius: 6px;
+                  box-shadow: 0 0 6px rgba(166, 124, 138, 0.4);
+                "
+                  type="number"
+                  class="form-control"
+                  id="reorderLevel"
+                  placeholder="Enter reorder level"
+                  min="1"
+                  required
+                />
+              </div>
+            </div>
+            <hr />
+
+            <!-- Submit Button -->
+            <div class="col mt-3">
+              <button type="submit" class="btn w-100">Register Stock</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -5,9 +5,12 @@ body {
   background: #e6e2d3;
   /* background:  #96897f; */
 }
-
 .sidebar-gradient {
   /* background-color: #96897f; */
   background-color: #625750;
   color: white;
+}
+.col-10{
+    font-size: 2rem;
+    font-weight: bold;
 }

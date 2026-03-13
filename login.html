@@ -3,22 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nyondo Stock Login</title>
+    <title> Login- Nyondo Stock</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/login.css">
   </head>
-  <body>
-    <header><h1>User Login</h1></header>
+  <body class="d-flex justify-content-center align-items-center vh-100 ">
+    <div class="card shadow" style="width: 400px;">
+  <div class="card-body">
+    <h1 class="card-title text-center mb-4">Login</h1>
     <form>
       <div>
-        <label>Username:</label>
-        <input type="text" required /><br /><br />
+        <label class="form-label">Username</label>
+        <input type="text"  class="form-control" required /><br />
       </div>
-      <div>
-        <label>Password:</label>
-        <input type="password" required /><br /><br>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
       </div>
-      <div>
-        <button type="submit">Login</button>
+      <div class="mb-3">
+        <label>Password</label>
+        <input type="password" class="form-control" required /><br />
+      </div>
+      <div class="form-check">
+        <input class="form-check-input mt-3" type="checkbox" id="rememberMe" />
+        <label class="form-check-label mt-3" for="rememberMe">Remember me</label>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn">Login</button>
+      </div>
+      <div class="text-center  ">
+        <a href="#">Forgot password?</a><br />
+        <a href="#">Create an account</a>
       </div>
     </form>
+  </div>
+</div>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

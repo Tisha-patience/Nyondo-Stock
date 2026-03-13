@@ -10,39 +10,96 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/css/index.css">
+    <style>
+     
+    </style>
   </head>
-  <style>
-    body {
-      margin: 10px;
-    }
-  </style>
+
   <body>
-    <h1>This is my bootstrap Page</h1>
-    <!-- these are alerts -->
-    <div class="alert alert-primary" role="alert">
-      Your sales record been submitted
+    <!-- <div class="container-fluid"> -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #625750"
+        data-bs-theme="dark border-bottom bg-dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand px-2">Nyondo Stock System</a>
+          <span class="ms-3 text-white">Welcome, Admin</span>
+
+          <div class="d-flex py-2 mx-5" role="search">
+            <div class="position-relative">
+              <input
+                class="form-control ps-5"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <i
+                class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="row">
+        <div
+          class="col-md-2 py-2 px-5 sidebar-gradient d-flex flex-column"
+          style="height: 100vh"
+        >
+          <h6 class="text-muted mt-3">Menu</h6>
+          <div>
+            <a class="nav-link text-white active" href="./index.html"
+              >Dashboard</a
+            >
+          </div>
+          <br />
+          <div>
+            <a class="nav-link text-white" href="../sales/salesManagement.html"
+              >Sales</a
+            >
+          </div>
+          <br />
+          <div>
+            <a class="nav-link text-white" href="../supplierRegistration.html"
+              >Suppliers</a
+            >
+          </div>
+          <br />
+          <div>
+            <a class="nav-link text-white" href="./stock.html">Stock</a>
+          </div>
+          <br />
+          <div>
+            <a class="nav-link text-white" href="./deposits.html">Deposits</a>
+          </div>
+          <br />
+          <div>
+            <a class="nav-link text-white" href="./reports.html">Reports</a>
+          </div>
+          <br />
+          <div>
+            <a class="nav-link text-white" href="../transportManagement.html"
+              >Transport Charges</a
+            >
+          </div>
+          <br />
+          <div>
+            <a class="nav-link text-white" href="./settings.html">Settings</a>
+          </div>
+          <br />
+          <div>
+            <a class="nav-link text-white" href="./logout.html">Log Out</a>
+          </div>
+        </div>
+
+        <div class="col-10 py-2">Quick Stats</div>
+      </div>
     </div>
-    <div class="alert alert-danger" role="alert">
-  A simple danger alert—check it out!
-</div>
-<!-- these are buttons -->
-    <button type="button" class="btn btn-primary">Base class</button>
-
-    <button type="button" class="btn btn-outline-danger">Danger</button>
-
-    <!-- these are badges -->
-     <button type="button" class="btn btn-primary">
-  Notifications <span class="badge text-bg-primary">4</span>
-</button>
-
-<!-- cards -->
-
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="simple cat">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-  </div>
-</div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
